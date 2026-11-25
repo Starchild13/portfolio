@@ -49,7 +49,9 @@
     "updated_at": "2026-11-15T21:01:31Z",
     "pushed_at": "2026-11-15T20:56:03Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/Dice_Roller_Star13/master/screenshots/XML_Dice.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -74,7 +76,9 @@
     "updated_at": "2026-11-15T19:19:01Z",
     "pushed_at": "2026-11-15T19:08:18Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/Dice_Roller13/master/screenshots/dice_roller.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -103,7 +107,9 @@
     "updated_at": "2026-11-15T17:57:09Z",
     "pushed_at": "2026-11-15T18:01:13Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/RetrofitEm/master/screenshots/success_state.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -126,7 +132,10 @@
     "updated_at": "2026-11-14T17:43:26Z",
     "pushed_at": "2026-11-14T17:59:46Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/Flow-Row-example/master/screenshots/Portrait.png",
+      "https://raw.githubusercontent.com/Starchild13/Flow-Row-example/master/screenshots/Landscape.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -168,7 +177,18 @@
     "updated_at": "2026-11-12T08:26:49Z",
     "pushed_at": "2026-11-12T08:23:28Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Home.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Discover_Moodie.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/All.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Positive.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Mixed.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Difficult.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Reflections.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Reveal_Moodie.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Save_Moodie.png",
+      "https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Mood_Board.png"
+    ],
     "category": "Flutter & Cross-Platform"
   },
   {
@@ -223,6 +243,7 @@
       "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/CarouselLayout.png",
       "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/ColourScreen.png",
       "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/3PictureLayout.png",
+      "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/HomeWithCardSaved.png",
       "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/GridLayout.png",
       "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/SaveScreen.png",
       "https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/TextScreen.png"
@@ -247,7 +268,10 @@
     "updated_at": "2026-11-09T07:21:17Z",
     "pushed_at": "2026-11-09T07:21:13Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/Namer/master/assets/home_screen_framed.png",
+      "https://raw.githubusercontent.com/Starchild13/Namer/master/assets/favorites_screen_framed.png"
+    ],
     "category": "Flutter & Cross-Platform"
   },
   {
@@ -272,7 +296,14 @@
     "updated_at": "2026-11-05T10:23:24Z",
     "pushed_at": "2026-11-05T10:20:40Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_list.png",
+      "https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_grid.png",
+      "https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_map.png",
+      "https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_mountain.png",
+      "https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_river.png",
+      "https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_waterfall.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -296,7 +327,14 @@
     "updated_at": "2026-11-03T09:25:00Z",
     "pushed_at": "2026-11-03T09:24:56Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/main_card.png",
+      "https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/sessionize_profile.png",
+      "https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/twitter_profile.png",
+      "https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/github_profile.png",
+      "https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/email_composer.png",
+      "https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/share_contact.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -321,7 +359,10 @@
     "updated_at": "2026-11-02T18:11:06Z",
     "pushed_at": "2026-11-02T18:06:59Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/Flow-Column-Example/master/screenshots/portrait.png",
+      "https://raw.githubusercontent.com/Starchild13/Flow-Column-Example/master/screenshots/landscape.png"
+    ],
     "category": "Android & Kotlin"
   },
   {
@@ -369,7 +410,14 @@
     "updated_at": "2026-06-22T14:03:21Z",
     "pushed_at": "2026-06-22T14:02:04Z",
     "default_branch": "master",
-    "screenshots": [],
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/android_home.png",
+      "https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/android_game.png",
+      "https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/android_win.png",
+      "https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/ios_home.png",
+      "https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/ios_game.png",
+      "https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/home_web.png"
+    ],
     "category": "Android & Kotlin"
   },
   {

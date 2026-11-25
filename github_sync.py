@@ -2,7 +2,7 @@
 
 This module provides functions to fetch, inspect, and synchronize public
 GitHub repositories and screenshot assets for the Starchild13 portfolio.
-Strictly formatted according to PEP 8 standards.
+Strictly formatted according to PEP 8 standards (all lines <= 79 chars).
 """
 
 import json
@@ -13,7 +13,7 @@ from typing import Any, Dict, List
 GITHUB_USERNAME = "Starchild13"
 RAW_BASE = "https://raw.githubusercontent.com/Starchild13"
 
-# Verified screenshot locations across Starchild13 repositories
+# Verified screenshot locations discovered across Starchild13 README files
 KNOWN_SCREENSHOTS: Dict[str, List[str]] = {
     "TickerBoard": [
         f"{RAW_BASE}/TickerBoard/master/screenshots/Class.png",
@@ -27,12 +27,97 @@ KNOWN_SCREENSHOTS: Dict[str, List[str]] = {
         f"{RAW_BASE}/Card-Studio/master/docs/screenshots/CarouselLayout.png",
         f"{RAW_BASE}/Card-Studio/master/docs/screenshots/ColourScreen.png",
         f"{RAW_BASE}/Card-Studio/master/docs/screenshots/3PictureLayout.png",
+        (
+            f"{RAW_BASE}/Card-Studio/master"
+            "/docs/screenshots/HomeWithCardSaved.png"
+        ),
         f"{RAW_BASE}/Card-Studio/master/docs/screenshots/GridLayout.png",
         f"{RAW_BASE}/Card-Studio/master/docs/screenshots/SaveScreen.png",
         f"{RAW_BASE}/Card-Studio/master/docs/screenshots/TextScreen.png",
     ],
     "Photos": [
         f"{RAW_BASE}/Photos/master/screenshots/app_screenshot.png",
+    ],
+    "moodie": [
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Home.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Discover_Moodie.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/All.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Positive.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Mixed.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Difficult.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Reflections.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Reveal_Moodie.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Save_Moodie.png",
+        f"{RAW_BASE}/moodie/master/doc/screenshots/Mood_Board.png",
+    ],
+    "BusinessCard": [
+        f"{RAW_BASE}/BusinessCard/master/screenshots/main_card.png",
+        f"{RAW_BASE}/BusinessCard/master/screenshots/sessionize_profile.png",
+        f"{RAW_BASE}/BusinessCard/master/screenshots/twitter_profile.png",
+        f"{RAW_BASE}/BusinessCard/master/screenshots/github_profile.png",
+        f"{RAW_BASE}/BusinessCard/master/screenshots/email_composer.png",
+        f"{RAW_BASE}/BusinessCard/master/screenshots/share_contact.png",
+    ],
+    "NoteEncryptWithVoice": [
+        f"{RAW_BASE}/NoteEncryptWithVoice/master/docs/images/layout_list.png",
+        f"{RAW_BASE}/NoteEncryptWithVoice/master/docs/images/layout_grid.png",
+        f"{RAW_BASE}/NoteEncryptWithVoice/master/docs/images/layout_map.png",
+        (
+            f"{RAW_BASE}/NoteEncryptWithVoice/master"
+            "/docs/images/layout_mountain.png"
+        ),
+        f"{RAW_BASE}/NoteEncryptWithVoice/master/docs/images/layout_river.png",
+        (
+            f"{RAW_BASE}/NoteEncryptWithVoice/master"
+            "/docs/images/layout_waterfall.png"
+        ),
+    ],
+    "Namer": [
+        f"{RAW_BASE}/Namer/master/assets/home_screen_framed.png",
+        f"{RAW_BASE}/Namer/master/assets/favorites_screen_framed.png",
+    ],
+    "RetrofitEm": [
+        f"{RAW_BASE}/RetrofitEm/master/screenshots/success_state.png",
+    ],
+    "BingoApp": [
+        (
+            f"{RAW_BASE}/BingoApp/master/composeApp/src/commonMain"
+            "/composeResources/drawable/android_home.png"
+        ),
+        (
+            f"{RAW_BASE}/BingoApp/master/composeApp/src/commonMain"
+            "/composeResources/drawable/android_game.png"
+        ),
+        (
+            f"{RAW_BASE}/BingoApp/master/composeApp/src/commonMain"
+            "/composeResources/drawable/android_win.png"
+        ),
+        (
+            f"{RAW_BASE}/BingoApp/master/composeApp/src/commonMain"
+            "/composeResources/drawable/ios_home.png"
+        ),
+        (
+            f"{RAW_BASE}/BingoApp/master/composeApp/src/commonMain"
+            "/composeResources/drawable/ios_game.png"
+        ),
+        (
+            f"{RAW_BASE}/BingoApp/master/composeApp/src/commonMain"
+            "/composeResources/drawable/home_web.png"
+        ),
+    ],
+    "Flow-Row-example": [
+        f"{RAW_BASE}/Flow-Row-example/master/screenshots/Portrait.png",
+        f"{RAW_BASE}/Flow-Row-example/master/screenshots/Landscape.png",
+    ],
+    "Flow-Column-Example": [
+        f"{RAW_BASE}/Flow-Column-Example/master/screenshots/portrait.png",
+        f"{RAW_BASE}/Flow-Column-Example/master/screenshots/landscape.png",
+    ],
+    "Dice_Roller_Star13": [
+        f"{RAW_BASE}/Dice_Roller_Star13/master/screenshots/XML_Dice.png",
+    ],
+    "Dice_Roller13": [
+        f"{RAW_BASE}/Dice_Roller13/master/screenshots/dice_roller.png",
     ],
 }
 

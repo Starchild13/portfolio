@@ -32,10 +32,68 @@ const KNOWN_SCREENSHOTS = {
     { title: 'Carousel Layout', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/CarouselLayout.png' },
     { title: 'Palette Selector', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/ColourScreen.png' },
     { title: '3-Picture Layout', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/3PictureLayout.png' },
-    { title: 'Saved Cards', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/HomeWithCardSaved.png' }
+    { title: 'Saved Cards', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/HomeWithCardSaved.png' },
+    { title: 'Grid Layout', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/GridLayout.png' },
+    { title: 'Save Screen', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/SaveScreen.png' },
+    { title: 'Typography & Text', url: 'https://raw.githubusercontent.com/Starchild13/Card-Studio/master/docs/screenshots/TextScreen.png' }
   ],
   'Photos': [
     { title: 'Staggered Grid View', url: 'https://raw.githubusercontent.com/Starchild13/Photos/master/screenshots/app_screenshot.png' }
+  ],
+  'moodie': [
+    { title: 'Home Check-In', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Home.png' },
+    { title: 'Discover Moodie', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Discover_Moodie.png' },
+    { title: 'All Characters', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/All.png' },
+    { title: 'Positive Moods', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Positive.png' },
+    { title: 'Mixed Emotions', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Mixed.png' },
+    { title: 'Difficult Moments', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Difficult.png' },
+    { title: 'Reflections', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Reflections.png' },
+    { title: 'Reveal Character', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Reveal_Moodie.png' },
+    { title: 'Mood Board', url: 'https://raw.githubusercontent.com/Starchild13/moodie/master/doc/screenshots/Mood_Board.png' }
+  ],
+  'BusinessCard': [
+    { title: 'Main Digital Card', url: 'https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/main_card.png' },
+    { title: 'Sessionize Profile', url: 'https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/sessionize_profile.png' },
+    { title: 'Twitter/X Profile', url: 'https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/twitter_profile.png' },
+    { title: 'GitHub Profile View', url: 'https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/github_profile.png' },
+    { title: 'Email Composer', url: 'https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/email_composer.png' },
+    { title: 'vCard Contact Sharing', url: 'https://raw.githubusercontent.com/Starchild13/BusinessCard/master/screenshots/share_contact.png' }
+  ],
+  'NoteEncryptWithVoice': [
+    { title: 'List View', url: 'https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_list.png' },
+    { title: 'Encrypted Grid', url: 'https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_grid.png' },
+    { title: 'Map Theme', url: 'https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_map.png' },
+    { title: 'Mountain Theme', url: 'https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_mountain.png' },
+    { title: 'River Theme', url: 'https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_river.png' },
+    { title: 'Waterfall Theme', url: 'https://raw.githubusercontent.com/Starchild13/NoteEncryptWithVoice/master/docs/images/layout_waterfall.png' }
+  ],
+  'Namer': [
+    { title: 'Word Generator', url: 'https://raw.githubusercontent.com/Starchild13/Namer/master/assets/home_screen_framed.png' },
+    { title: 'Favorites List', url: 'https://raw.githubusercontent.com/Starchild13/Namer/master/assets/favorites_screen_framed.png' }
+  ],
+  'RetrofitEm': [
+    { title: 'API Response State', url: 'https://raw.githubusercontent.com/Starchild13/RetrofitEm/master/screenshots/success_state.png' }
+  ],
+  'BingoApp': [
+    { title: 'Android Home', url: 'https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/android_home.png' },
+    { title: 'Game Board', url: 'https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/android_game.png' },
+    { title: 'Victory Screen', url: 'https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/android_win.png' },
+    { title: 'iOS Home', url: 'https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/ios_home.png' },
+    { title: 'Web / Desktop View', url: 'https://raw.githubusercontent.com/Starchild13/BingoApp/master/composeApp/src/commonMain/composeResources/drawable/home_web.png' }
+  ],
+  'Flow-Row-example': [
+    { title: 'Flow Row Portrait', url: 'https://raw.githubusercontent.com/Starchild13/Flow-Row-example/master/screenshots/Portrait.png' },
+    { title: 'Flow Row Landscape', url: 'https://raw.githubusercontent.com/Starchild13/Flow-Row-example/master/screenshots/Landscape.png' }
+  ],
+  'Flow-Column-Example': [
+    { title: 'Flow Column Portrait', url: 'https://raw.githubusercontent.com/Starchild13/Flow-Column-Example/master/screenshots/portrait.png' },
+    { title: 'Flow Column Landscape', url: 'https://raw.githubusercontent.com/Starchild13/Flow-Column-Example/master/screenshots/landscape.png' }
+  ],
+  'Dice_Roller_Star13': [
+    { title: 'Dice Roller UI', url: 'https://raw.githubusercontent.com/Starchild13/Dice_Roller_Star13/master/screenshots/XML_Dice.png' }
+  ],
+  'Dice_Roller13': [
+    { title: 'Dice Roller', url: 'https://raw.githubusercontent.com/Starchild13/Dice_Roller13/master/screenshots/dice_roller.png' }
   ]
 };
 
