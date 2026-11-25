@@ -89,6 +89,7 @@
         <li><a href="#leadership" class="nav__link" id="navlink-leadership">Leadership</a></li>
         <li><a href="#speaking"   class="nav__link" id="navlink-speaking">Speaking</a></li>
         <li><a href="#panels"     class="nav__link" id="navlink-panels">Panels</a></li>
+        <li><a href="#gallery"    class="nav__link" id="navlink-gallery">Gallery</a></li>
         <li><a href="#media"      class="nav__link" id="navlink-media">Media</a></li>
         <li><a href="#articles"   class="nav__link" id="navlink-articles">Articles (37)</a></li>
         <li><a href="#awards"     class="nav__link" id="navlink-awards">Honors</a></li>
@@ -168,6 +169,7 @@
             <a href="https://twitter.com/JustJessZA" target="_blank" rel="noopener noreferrer" class="chip" style="text-decoration:none;">🐦 Twitter/X (@JustJessZA)</a>
             <a href="https://github.com/Starchild13" target="_blank" rel="noopener noreferrer" class="chip" style="text-decoration:none;">🐙 GitHub (Starchild13)</a>
             <a href="https://starchild13.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="chip" style="text-decoration:none;">📝 Blog (starchild13.hashnode.dev)</a>
+            <a href="https://medium.com/@jess1998mat" target="_blank" rel="noopener noreferrer" class="chip" style="text-decoration:none;">✍️ Medium (@jess1998mat)</a>
             <a href="https://sessionize.com/Jessica_Randall/" target="_blank" rel="noopener noreferrer" class="chip" style="text-decoration:none;">🎤 Sessionize Speaker Profile</a>
           </div>
 
@@ -415,7 +417,7 @@
             Things I've<br /><em>built &amp; shipped</em>
           </h2>
           <p class="section__sub">
-            All 18 repositories synced live from GitHub with actual project screenshots.
+            All 20 public repositories synced live from GitHub with actual project screenshots.
           </p>
         </div>
 
@@ -423,7 +425,7 @@
         <div class="sync-banner reveal" role="status" aria-live="polite">
           <div class="sync-status" id="sync-status-text">
             <span class="sync-dot"></span>
-            Live synced with GitHub: <strong>18 public repositories</strong>
+            Live synced with GitHub: <strong>20 public repositories</strong>
           </div>
           <button class="sync-refresh-btn" id="sync-refresh-btn" title="Refresh live GitHub data">
             🔄 Check GitHub Updates
@@ -432,7 +434,7 @@
 
         <!-- Project Filter Bar -->
         <div class="filter-bar reveal" role="toolbar" aria-label="Filter repositories by technology">
-          <button class="filter-btn active" data-proj-filter="all">All Projects (18)</button>
+          <button class="filter-btn active" data-proj-filter="all">All Projects (20)</button>
           <button class="filter-btn" data-proj-filter="compose">Jetpack Compose &amp; Kotlin</button>
           <button class="filter-btn" data-proj-filter="flutter">Flutter &amp; Dart</button>
           <button class="filter-btn" data-proj-filter="security">Security &amp; Math</button>
@@ -595,7 +597,7 @@
           </article>
 
           <!-- 6. TDA Lab -->
-          <article class="project project--third reveal" id="proj-tda" data-category="compose security" aria-label="TDA Lab project">
+          <article class="project project--third reveal" id="proj-tda" data-repo-name="TDAProject" data-category="compose security" aria-label="TDA Lab project">
             <div class="project__content">
               <div class="project__meta">
                 <span class="project__type">Kotlin · Mathematics</span>
@@ -606,6 +608,7 @@
                 Visualizing Topological Data Analysis on 2D point clouds in Android. Directly relates to DevConf 2026 and
                 next.app devCon 2026 talks on Interactive Persistent Homology and 'Getting the Hole Picture' with Kotlin.
               </p>
+              <div class="project__screenshots-target"></div>
               <div class="project__tags">
                 <span class="project__tag">Topological Data</span>
                 <span class="project__tag">Persistent Homology</span>
@@ -768,6 +771,210 @@
               </div>
               <div class="project__links">
                 <a href="https://github.com/Starchild13/Namer" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. Factor_App -->
+          <article class="project project--third reveal" id="proj-factor" data-repo-name="Factor_App" data-category="flutter security" aria-label="Factor App project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Flutter · Mathematics</span>
+                <span class="project__year">2026</span>
+              </div>
+              <h3 class="project__title">🧮 Factor App &amp; Times Tables</h3>
+              <p class="project__desc">
+                A modern Flutter application for math exploration, factor calculation, and times tables practice. Features optimal O(&radic;N) factor finding, prime detection, factor pairs, interactive flash cards, and Material 3 adaptive theming.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">Flutter</span>
+                <span class="project__tag">Dart</span>
+                <span class="project__tag">Mathematics</span>
+                <span class="project__tag">Material 3</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/Factor_App" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. Dice_Roller13 -->
+          <article class="project project--third reveal" id="proj-dice13" data-repo-name="Dice_Roller13" data-category="compose" aria-label="Dice Roller 13 project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Android · Jetpack Compose</span>
+                <span class="project__year">2024</span>
+              </div>
+              <h3 class="project__title">🎲 Dice Roller 13 (Compose)</h3>
+              <p class="project__desc">
+                Modern Android Dice Roller built 100% with Jetpack Compose, Material 3, and Kotlin 2.4.21. Features smooth rotation animations, dynamic theme colors, SDK 37 support, and AGP 9.5.1 with Gradle 9.6.0.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">Jetpack Compose</span>
+                <span class="project__tag">Material 3</span>
+                <span class="project__tag">Kotlin 2.4.21</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/Dice_Roller13" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15. Flow-Column-Example -->
+          <article class="project project--third reveal" id="proj-flowcol" data-repo-name="Flow-Column-Example" data-category="compose" aria-label="Flow Column Example project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Android · Jetpack Compose</span>
+                <span class="project__year">2024</span>
+              </div>
+              <h3 class="project__title">📊 FlowColumn Layouts</h3>
+              <p class="project__desc">
+                Android application demonstrating dynamic, responsive multi-column chip layouts in Jetpack Compose using the FlowColumn layout and interactive Material 3 FilterChip components.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">Compose</span>
+                <span class="project__tag">FlowColumn</span>
+                <span class="project__tag">FilterChip</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/Flow-Column-Example" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 16. NailBiteBreaker -->
+          <article class="project project--third reveal" id="proj-nailbite" data-repo-name="NailBiteBreaker" data-category="compose" aria-label="NailBiteBreaker project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Android · Habit Tracker</span>
+                <span class="project__year">2024</span>
+              </div>
+              <h3 class="project__title">🌱 NailBiteBreaker</h3>
+              <p class="project__desc">
+                A personal habit-tracking Android application designed to build mindfulness, monitor daily habit-breaking streaks, and support behavioral wellness.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">Android</span>
+                <span class="project__tag">Kotlin</span>
+                <span class="project__tag">Habit Tracking</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/NailBiteBreaker" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 17. api_call_dio -->
+          <article class="project project--third reveal" id="proj-dio" data-repo-name="api_call_dio" data-category="flutter" aria-label="Flutter Dio API project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Flutter · Networking</span>
+                <span class="project__year">2024</span>
+              </div>
+              <h3 class="project__title">⚡ Flutter Dio API Client</h3>
+              <p class="project__desc">
+                Demonstrates clean asynchronous HTTP networking, RESTful API consumption, response interceptors, and JSON data serialization in Flutter using the Dio package.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">Flutter</span>
+                <span class="project__tag">Dart</span>
+                <span class="project__tag">Dio</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/api_call_dio" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. Assessment -->
+          <article class="project project--third reveal" id="proj-assessment" data-repo-name="Assessment" data-category="compose" aria-label="Assessment project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Android · Authentication</span>
+                <span class="project__year">2024</span>
+              </div>
+              <h3 class="project__title">🛡️ Auth &amp; Onboarding Flow</h3>
+              <p class="project__desc">
+                Modern Android user authentication flow featuring custom sign-in, account creation screens, form validation, and clean navigation architecture.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">Android</span>
+                <span class="project__tag">Kotlin</span>
+                <span class="project__tag">Authentication</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/Assessment" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 19. portfolio -->
+          <article class="project project--third reveal" id="proj-portfolio" data-repo-name="portfolio" data-category="compose security" aria-label="Portfolio project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">Web · CI/CD &amp; Portfolio</span>
+                <span class="project__year">2026</span>
+              </div>
+              <h3 class="project__title">🌐 Developer Portfolio &amp; Community CV</h3>
+              <p class="project__desc">
+                Open-source personal developer portfolio and Community CV featuring interactive 3D flap displays, live GitHub API sync, lightbox screenshot galleries, and automated GitHub Actions CI/CD deployment.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">HTML5/CSS3</span>
+                <span class="project__tag">Vanilla JS</span>
+                <span class="project__tag">GitHub Actions</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/portfolio" target="_blank" rel="noopener noreferrer" class="project__link">
+                  View Repository &rarr;
+                </a>
+                <a href="https://starchild13.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="project__link" style="color:var(--accent);">
+                  Live Site &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Starchild13 -->
+          <article class="project project--third reveal" id="proj-starchild13" data-repo-name="Starchild13" data-category="security" aria-label="Starchild13 Profile project">
+            <div class="project__content">
+              <div class="project__meta">
+                <span class="project__type">GitHub · Profile Showcase</span>
+                <span class="project__year">2024–2026</span>
+              </div>
+              <h3 class="project__title">✨ Starchild13 Profile Showcase</h3>
+              <p class="project__desc">
+                Special GitHub profile repository powering the developer showcase, statistics badges, contribution visualizers, community speaking engagements, and technical bio overview.
+              </p>
+              <div class="project__screenshots-target"></div>
+              <div class="project__tags">
+                <span class="project__tag">GitHub Actions</span>
+                <span class="project__tag">Markdown</span>
+                <span class="project__tag">Profile Config</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Starchild13/Starchild13" target="_blank" rel="noopener noreferrer" class="project__link">
                   View Repository &rarr;
                 </a>
               </div>
@@ -1387,6 +1594,235 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION: CONFERENCE & TRAVEL PHOTO GALLERY
+    ══════════════════════════════════ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+
+        <div class="section__intro">
+          <span class="section__label">Global Footprint · 2023–2026</span>
+          <h2 class="section__title" id="gallery-heading">
+            Conferences &amp; Places<br /><em>Around the World</em>
+          </h2>
+          <p class="section__sub">
+            Highlights from international speaking engagements, developer summits, and community gatherings across 10 countries and 4 continents. Click any photo to expand.
+          </p>
+        </div>
+
+        <!-- International Countries Strip -->
+        <div class="gallery-places-strip reveal" aria-label="Countries visited for conferences and tech events">
+          <span class="gallery-place-pill">🇯🇵 Japan · Tokyo (2026)</span>
+          <span class="gallery-place-pill">🇩🇪 Germany · Berlin, Nuremberg, Heidelberg (2023–2026)</span>
+          <span class="gallery-place-pill">🇬🇧 United Kingdom · Leeds (2026)</span>
+          <span class="gallery-place-pill">🇵🇹 Portugal · Lisbon (2024)</span>
+          <span class="gallery-place-pill">🇨🇭 Switzerland · Geneva (2026)</span>
+          <span class="gallery-place-pill">🇷🇼 Rwanda · Kigali (2023–2025)</span>
+          <span class="gallery-place-pill">🇰🇪 Kenya · Nairobi &amp; Mombasa (2023–2024)</span>
+          <span class="gallery-place-pill">🇬🇭 Ghana · Accra (2023)</span>
+          <span class="gallery-place-pill">🇿🇦 South Africa · Cape Town &amp; Johannesburg (2023–2026)</span>
+          <span class="gallery-place-pill">🇺🇸 United States · Philadelphia</span>
+        </div>
+
+        <!-- Gallery Filter Bar -->
+        <div class="filter-bar reveal" role="toolbar" aria-label="Filter conference photos by city">
+          <button class="filter-btn active" data-gallery-filter="all">All Curated Photos (18)</button>
+          <button class="filter-btn" data-gallery-filter="berlin">🇩🇪 Berlin (8)</button>
+          <button class="filter-btn" data-gallery-filter="tokyo">🇯🇵 Tokyo (5)</button>
+          <button class="filter-btn" data-gallery-filter="leeds">🇬🇧 Leeds (5)</button>
+        </div>
+
+        <div class="gallery-grid">
+
+          <!-- Tokyo / DroidKaigi 2026 -->
+          <div class="gallery-card reveal" data-gallery-cat="tokyo" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/droidkaigi/tokyo_unu_building.jpg" alt="DroidKaigi 2026 mascot backdrop in Tokyo" loading="lazy" />
+              <span class="gallery-card__badge">🇯🇵 Tokyo, Japan</span>
+            </div>
+            <div class="gallery-card__caption">DroidKaigi 2026 Speaker Backdrop · Shibuya, Tokyo</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="tokyo" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/droidkaigi/tokyo_gradle_slide.jpg" alt="Musical Chairs with Gradle talk slide" loading="lazy" />
+              <span class="gallery-card__badge">🇯🇵 Tokyo, Japan</span>
+            </div>
+            <div class="gallery-card__caption">Talk Prep: &ldquo;Musical Chairs with Gradle: Surviving the Build Party&rdquo;</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="tokyo" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/droidkaigi/tokyo_droidkaigi_venue.jpg" alt="DroidKaigi 2026 venue display" loading="lazy" />
+              <span class="gallery-card__badge">🇯🇵 Tokyo, Japan</span>
+            </div>
+            <div class="gallery-card__caption">DroidKaigi 2026 Main Hall Entrance, Tokyo</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="tokyo" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/droidkaigi/tokyo_unu_selfie.jpg" alt="United Nations University Tokyo" loading="lazy" />
+              <span class="gallery-card__badge">🇯🇵 Tokyo, Japan</span>
+            </div>
+            <div class="gallery-card__caption">United Nations University Campus · Shibuya, Tokyo</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="tokyo" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/droidkaigi/tokyo_droidkaigi_backdrop.jpg" alt="DroidKaigi 2026 speaker lanyard and badge" loading="lazy" />
+              <span class="gallery-card__badge">🇯🇵 Tokyo, Japan</span>
+            </div>
+            <div class="gallery-card__caption">DroidKaigi 2026 Speaker Badge, Lanyard &amp; Schedule</div>
+          </div>
+
+          <!-- Berlin / next.app devCon & BITES 2026 -->
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_bites_panel.jpg" alt="Speaking on panel stage at BITES 2026 Berlin" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">Panel Stage at Black in Tech Europe Summit (BITES 2026), Berlin</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_nextapp_card.jpg" alt="next.app devCon 2026 speaker card" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">next.app devCon 2026 Speaker Card: &ldquo;Getting the Hole Picture&rdquo;</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_bites_backdrop.jpg" alt="BITES 2026 Berlin step and repeat" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">At the BITES 2026 Summit Backdrop, Berlin</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_weltzeituhr.jpg" alt="Alexanderplatz World Clock Berlin" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">Alexanderplatz World Clock (Weltzeituhr) · Berlin</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_bites_speaker_card.jpg" alt="BITES 2026 The AI Shift Speaker Card" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">Official BITES 2026 Speaker Spotlight: &ldquo;The AI Shift&rdquo;</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_scooter.jpg" alt="Autumn streets in Berlin" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">Exploring Autumn Leaf-Lined Streets in Berlin</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_workshop.jpg" alt="Community workshop in Berlin" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">Creative Community Workshop &amp; Networking, Berlin</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="berlin" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/berlin/berlin_tda_slide.jpg" alt="CityCube Berlin venue flags" loading="lazy" />
+              <span class="gallery-card__badge">🇩🇪 Berlin, Germany</span>
+            </div>
+            <div class="gallery-card__caption">Conference Venue Grounds · Berlin, Germany</div>
+          </div>
+
+          <!-- Leeds / Kotlin Leeds 2026 -->
+          <div class="gallery-card reveal" data-gallery-cat="leeds" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/leeds/leeds_kotlinleeds_sign.jpg" alt="KotlinLeeds illuminated marquee" loading="lazy" />
+              <span class="gallery-card__badge">🇬🇧 Leeds, UK</span>
+            </div>
+            <div class="gallery-card__caption">Official #KOTLINLEEDS Illuminated Stage Marquee · UK</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="leeds" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/leeds/leeds_google_office.jpg" alt="Google UK office courtyard" loading="lazy" />
+              <span class="gallery-card__badge">🇬🇧 Leeds / UK</span>
+            </div>
+            <div class="gallery-card__caption">Outside Google UK Office Courtyard</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="leeds" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/leeds/leeds_ferris_wheel.jpg" alt="Leeds carnival ferris wheel" loading="lazy" />
+              <span class="gallery-card__badge">🇬🇧 Leeds, UK</span>
+            </div>
+            <div class="gallery-card__caption">Illuminated Night Fairground · Leeds, UK</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="leeds" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/leeds/leeds_fairground_selfie.jpg" alt="Leeds winter carnival" loading="lazy" />
+              <span class="gallery-card__badge">🇬🇧 Leeds, UK</span>
+            </div>
+            <div class="gallery-card__caption">Evening Stroll Through Leeds Lights &amp; Carnival</div>
+          </div>
+
+          <div class="gallery-card reveal" data-gallery-cat="leeds" role="button" tabindex="0">
+            <div class="gallery-card__img-wrap">
+              <img src="assets/gallery/leeds/leeds_speaker_badge.jpg" alt="Leeds evening lights" loading="lazy" />
+              <span class="gallery-card__badge">🇬🇧 Leeds, UK</span>
+            </div>
+            <div class="gallery-card__caption">Kotlin Leeds Community Social Evening</div>
+          </div>
+
+        </div>
+
+        <!-- Shared Google Photos Conference Albums -->
+        <h3 class="gallery-albums-heading reveal">Shared Google Photos Conference Albums</h3>
+        <div class="albums-grid reveal">
+          <a href="https://photos.google.com/share/AF1QipOx7YBWB5R9xPWKpCH1JpA4QdMeQ_WqfKBx64NFGiHN5RcORqFXTP17OeH7PZLaAA?key=YUdHN1RwSF84NHRrN3B2dGZ4VExlQXdRYzd0Wjl3" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">📸 DevFest Cape Town 2026</div>
+            <div class="album-link-card__meta">494 Photos · Oct 2026 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipNQkPNNDubzXsEbNLHj0_fh2fYB9tqQd4SIYB2FiIvs2vZGGMAWtzlPstp-rOosbA?key=UnRQZkxJS0NsRkJCMk9ObDFyNXpxdXJCSEtNN1h3" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">☁️ GDG Cloud Summit Recap</div>
+            <div class="album-link-card__meta">207 Photos · Aug 2026 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipP8Zee7oRXjliHDShAZzqKcEhdltkGHjMq_gkKDQGla2T45xArUspytY45Lz2G6uQ?key=SzZnTzBFZ0t0eUd4WjU1Z2hMMENQY1VpbXVYRHlB" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">🤖 Build with AI: Next-Level Trainer</div>
+            <div class="album-link-card__meta">406 Photos · Apr 2026 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipMtVMAGB5B3lJ_rj8l7gQjiGugWUHIOy0j36251TPaqRlCBYQHhZpyToR1ZyEaR6g?key=ZDVCM2RhVkdScHlob1o2OUJOTTRBWlpLTFNjU2xB" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">💜 IWD 2026: Break the Pattern in Tech</div>
+            <div class="album-link-card__meta">112 Photos · Mar 2026 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipPPzdej3Fy0PzSc-0jtdm7GViKrnPgkoFLxj5TIZfCT_uJNPFEQxxzSjgRWS7Ezqg?key=VDJIVGd6eTl4NVd1T0NZQmpUYVViUTA1UjhGNW1B" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">✨ DevFest Highlights: Best of 2025</div>
+            <div class="album-link-card__meta">242 Photos · Feb 2026 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipMsUoDkkvh1f9cR1rlZovDg29IT-J2nFEGAfpcEg1vqxzgkuY_RoHyEHoVS1NMvRQ?key=ZUVCLWF3MXNrck5qNS1Db3JnV3dRRk5CNnJCOWJB" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">🎉 Google DevFest 2025 Cape Town</div>
+            <div class="album-link-card__meta">283 Photos · 2025 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipNd3rKXo_PrAcVlnnp67EG0g64hU9EGZG021N5xmy7qG4cVjieNYw8cDS7kupOzNQ?key=ZmJtekpOekUwaUowM2hJb01fRURkaTVwNzFoLVBB" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">🇿🇦 DevFest Cape Town 2024</div>
+            <div class="album-link-card__meta">146 Photos · 2024 · Google Photos &rarr;</div>
+          </a>
+          <a href="https://photos.google.com/share/AF1QipMyC4C3Oz5BLg1kq0VYB40H-Ltsp4IB4BapJ7-1cJ2LT3tiZ5Xx0X0UrWVkCxzKEA?key=NVN6RGUwUHNxRDlEdTQ5OFF3RzBCSmtGdGFMYWdR" target="_blank" rel="noopener noreferrer" class="album-link-card">
+            <div class="album-link-card__title">🇩🇪 Droidcon Berlin 2023</div>
+            <div class="album-link-card__meta">85 Photos · 2023 · Google Photos &rarr;</div>
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -2294,6 +2730,9 @@
             </a>
             <a href="https://starchild13.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
               Hashnode Blog
+            </a>
+            <a href="https://medium.com/@jess1998mat" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              Medium (@jess1998mat)
             </a>
           </div>
         </div>

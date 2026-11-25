@@ -8,12 +8,13 @@ Complies with PEP 8 style guide.
 from github_sync import (
     enrich_repository_data,
     export_portfolio_data,
+    fetch_live_repositories,
     load_cached_repositories,
 )
 
 
 def example_sync_repositories() -> None:
-    """Showcase fetching all 18 repositories with screenshot discovery."""
+    """Showcase fetching all repositories with screenshot discovery."""
     brain_dir = (
         "/Users/jessicarandall/.gemini/antigravity/brain/"
         "8114c40b-fd82-4e82-8a37-5a75855c1147/.system_generated/steps/37/"
@@ -23,8 +24,10 @@ def example_sync_repositories() -> None:
     output_file = project_dir + "projects_data.json"
 
     print("Executing GitHub repository synchronization for Starchild13...")
-    raw_repos = load_cached_repositories(cache_file)
-    print(f"Loaded {len(raw_repos)} raw repositories from cache.")
+    raw_repos = fetch_live_repositories("Starchild13", output_file)
+    if not raw_repos:
+        raw_repos = load_cached_repositories(cache_file)
+    print(f"Loaded {len(raw_repos)} repositories.")
 
     enriched_repos = enrich_repository_data(raw_repos)
     print(

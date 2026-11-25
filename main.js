@@ -94,6 +94,14 @@ const KNOWN_SCREENSHOTS = {
   ],
   'Dice_Roller13': [
     { title: 'Dice Roller', url: 'https://raw.githubusercontent.com/Starchild13/Dice_Roller13/master/screenshots/dice_roller.png' }
+  ],
+  'Factor_App': [
+    { title: 'Home Page & Calculator', url: 'https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/HomePage.png' },
+    { title: 'Factor List View', url: 'https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/ListView.png' },
+    { title: 'Factor Pairs', url: 'https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/PairView.png' },
+    { title: 'Tuple View', url: 'https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/TupleView.png' },
+    { title: 'Solution Reveal', url: 'https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/SolutionReveal.png' },
+    { title: 'Times Tables & Flash Cards', url: 'https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/TimesTableAndFlashCards.png' }
   ]
 };
 
@@ -319,6 +327,43 @@ function initFilters() {
         }
       });
     });
+  });
+
+  // Conference & Travel Photo Gallery filters + Lightbox binding
+  const galleryFilterBtns = document.querySelectorAll('[data-gallery-filter]');
+  const galleryCards = document.querySelectorAll('.gallery-card[data-gallery-cat]');
+
+  galleryFilterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      galleryFilterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filterVal = btn.getAttribute('data-gallery-filter');
+      galleryCards.forEach((card) => {
+        const cat = card.getAttribute('data-gallery-cat');
+        if (filterVal === 'all' || cat.includes(filterVal)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  galleryCards.forEach((card) => {
+    const img = card.querySelector('img');
+    const captionEl = card.querySelector('.gallery-card__caption');
+    if (img) {
+      card.addEventListener('click', () => {
+        openLightbox(img.src, captionEl ? captionEl.textContent : img.alt);
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img.src, captionEl ? captionEl.textContent : img.alt);
+        }
+      });
+    }
   });
 }
 

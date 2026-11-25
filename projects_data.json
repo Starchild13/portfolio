@@ -1,5 +1,51 @@
 [
   {
+    "id": 1472105898,
+    "name": "portfolio",
+    "full_name": "Starchild13/portfolio",
+    "html_url": "https://github.com/Starchild13/portfolio",
+    "description": "Open source project by Starchild13.",
+    "language": "HTML",
+    "stars": 0,
+    "forks": 0,
+    "topics": [],
+    "updated_at": "2026-11-25T17:14:28Z",
+    "pushed_at": "2026-11-25T17:37:12Z",
+    "default_branch": "master",
+    "screenshots": [],
+    "category": "Experimental & Web"
+  },
+  {
+    "id": 954103624,
+    "name": "Factor_App",
+    "full_name": "Starchild13/Factor_App",
+    "html_url": "https://github.com/Starchild13/Factor_App",
+    "description": "A modern math application to calculate factors, factor pairs, prime numbers, and practice times tables easily.",
+    "language": "HTML",
+    "stars": 0,
+    "forks": 0,
+    "topics": [
+      "android",
+      "cross-platform",
+      "dart",
+      "education",
+      "factors",
+      "flutter"
+    ],
+    "updated_at": "2026-11-25T07:57:11Z",
+    "pushed_at": "2026-11-22T18:39:53Z",
+    "default_branch": "master",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/HomePage.png",
+      "https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/ListView.png",
+      "https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/PairView.png",
+      "https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/TupleView.png",
+      "https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/SolutionReveal.png",
+      "https://raw.githubusercontent.com/Starchild13/Factor_App/master/screenshots/TimesTableAndFlashCards.png"
+    ],
+    "category": "Flutter & Cross-Platform"
+  },
+  {
     "id": 755841792,
     "name": "TickerBoard",
     "full_name": "Starchild13/TickerBoard",

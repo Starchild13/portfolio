@@ -119,6 +119,17 @@ KNOWN_SCREENSHOTS: Dict[str, List[str]] = {
     "Dice_Roller13": [
         f"{RAW_BASE}/Dice_Roller13/master/screenshots/dice_roller.png",
     ],
+    "Factor_App": [
+        f"{RAW_BASE}/Factor_App/master/screenshots/HomePage.png",
+        f"{RAW_BASE}/Factor_App/master/screenshots/ListView.png",
+        f"{RAW_BASE}/Factor_App/master/screenshots/PairView.png",
+        f"{RAW_BASE}/Factor_App/master/screenshots/TupleView.png",
+        f"{RAW_BASE}/Factor_App/master/screenshots/SolutionReveal.png",
+        (
+            f"{RAW_BASE}/Factor_App/master/screenshots"
+            "/TimesTableAndFlashCards.png"
+        ),
+    ],
 }
 
 
@@ -142,6 +153,52 @@ def load_cached_repositories(cache_path: str) -> List[Dict[str, Any]]:
         return []
 
     return json.loads(raw_text[start_idx:])
+
+
+def fetch_live_repositories(
+    username: str = GITHUB_USERNAME,
+    fallback_path: str = "projects_data.json",
+) -> List[Dict[str, Any]]:
+    """Fetch live public repositories for a user from GitHub API.
+
+    Falls back to cached local data if network is unavailable.
+
+    Args:
+        username: GitHub username to query.
+        fallback_path: Path to cached JSON file if network fails.
+
+    Returns:
+        List of repository dictionaries.
+    """
+    api_url = (
+        f"https://api.github.com/users/{username}/repos"
+        "?per_page=100&sort=updated"
+    )
+    try:
+        import urllib.request
+
+        req = urllib.request.Request(
+            api_url,
+            headers={
+                "Accept": "application/vnd.github.v3+json",
+                "User-Agent": "Starchild13-Portfolio-Sync",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=10) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode("utf-8"))
+                return data
+    except Exception:
+        pass
+
+    if os.path.exists(fallback_path):
+        try:
+            with open(fallback_path, "r", encoding="utf-8") as file_handle:
+                return json.load(file_handle)
+        except Exception:
+            pass
+
+    return []
 
 
 def enrich_repository_data(
