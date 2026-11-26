@@ -588,8 +588,8 @@ a {
    PROJECTS
 ═══════════════════════════════════════════════════════════ */
 .projects {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
   gap: 1.25rem;
 }
 
@@ -612,6 +612,17 @@ a {
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
   position: relative;
   overflow: hidden;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project:hover {
@@ -622,6 +633,7 @@ a {
 
 /* Large featured card */
 .project--large {
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -2582,5 +2594,81 @@ a {
   .lightbox-close {
     top: -36px;
     right: 0;
+  }
+}
+
+
+/* ── Bulletproof Multi-Screen Grid & Overflow Guards ─────── */
+.hero__left,
+.hero__right,
+.speaking-card,
+.panel-card,
+.media-card,
+.article-item,
+.gallery-card,
+.community-card,
+.award-item,
+.leadership-card,
+.album-link-card {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.speaking-footer,
+.media-footer,
+.project__links,
+.cv-hero-badge {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav__inner,
+  .hero__inner {
+    padding: 0 1.25rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project--large {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__inner,
+  .hero__inner {
+    padding: 0 1rem;
+  }
+
+  .hero__heading {
+    font-size: clamp(1.85rem, 8.5vw, 2.5rem);
+  }
+
+  .cv-hero-badge {
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.76rem;
+    width: 100%;
+  }
+
+  .project__screenshot-thumb {
+    width: 118px;
+    height: 185px;
+  }
+
+  .hero__photo-frame {
+    width: min(220px, 72vw);
+    height: auto;
+    aspect-ratio: 11 / 12;
   }
 }
