@@ -331,7 +331,8 @@ function initFilters() {
 
   // Conference & Travel Photo Gallery filters + Lightbox binding
   const galleryFilterBtns = document.querySelectorAll('[data-gallery-filter]');
-  const galleryCards = document.querySelectorAll('.gallery-card[data-gallery-cat]');
+  const galleryGroups = document.querySelectorAll('.gallery-group[data-gallery-cat]');
+  const galleryCards = document.querySelectorAll('.gallery-card');
 
   galleryFilterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -339,12 +340,12 @@ function initFilters() {
       btn.classList.add('active');
 
       const filterVal = btn.getAttribute('data-gallery-filter');
-      galleryCards.forEach((card) => {
-        const cat = card.getAttribute('data-gallery-cat');
+      galleryGroups.forEach((group) => {
+        const cat = group.getAttribute('data-gallery-cat');
         if (filterVal === 'all' || cat.includes(filterVal)) {
-          card.style.display = '';
+          group.style.display = '';
         } else {
-          card.style.display = 'none';
+          group.style.display = 'none';
         }
       });
     });
