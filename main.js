@@ -547,9 +547,44 @@ function initSmoothScroll() {
   });
 }
 
+/* ── Dark Mode Theme Toggle ───────────────────────────────── */
+
+function initThemeToggle() {
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (!toggleBtn) return;
+
+  const updateButton = (isDark) => {
+    toggleBtn.textContent = isDark ? '☀️' : '🌙';
+    toggleBtn.setAttribute(
+      'aria-label',
+      isDark ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+    toggleBtn.setAttribute(
+      'title',
+      isDark ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+  };
+
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  updateButton(currentTheme === 'dark');
+
+  toggleBtn.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const nextTheme = isDark ? 'light' : 'dark';
+    if (nextTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    localStorage.setItem('portfolio_theme', nextTheme);
+    updateButton(nextTheme === 'dark');
+  });
+}
+
 /* ── Entry Point ──────────────────────────────────────────── */
 
 function init() {
+  initThemeToggle();
   initReveal();
   initStickyHeader();
   initActiveNav();

@@ -71,6 +71,15 @@
   </script>
 
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('portfolio_theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -97,6 +106,13 @@
       </ul>
 
       <div style="display:flex;align-items:center;gap:0.6rem;">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle dark/light theme"
+        >🌙</button>
         <a
           href="https://sessionize.com/Jessica_Randall/"
           target="_blank"
