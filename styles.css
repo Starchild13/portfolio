@@ -52,8 +52,10 @@
 }
 
 html {
+html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 
 body {
@@ -61,7 +63,7 @@ body {
   background-color: var(--bg);
   color: var(--text-primary);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img {
@@ -2345,4 +2347,209 @@ a {
 .album-link-card__meta {
   font-size: 0.78rem;
   color: var(--text-secondary);
+}
+
+
+/* ── Universal Responsive Adaptation (All Screens) ────────── */
+@media (max-width: 1140px) {
+  .nav__links {
+    gap: 0.15rem;
+  }
+  .nav__link {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .nav__github {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.85rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav__links,
+  .nav__github {
+    display: none;
+  }
+  .nav__burger {
+    display: flex;
+  }
+  .nav--open .nav__links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 64px 0 0;
+    background: var(--bg);
+    padding: 1.5rem 1.75rem 3rem;
+    gap: 0.35rem;
+    align-items: flex-start;
+    border-top: 1px solid var(--border);
+    z-index: 999;
+    overflow-y: auto;
+    max-height: calc(100vh - 64px);
+  }
+  .nav--open .nav__link {
+    font-size: 1.05rem;
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-gap: 4rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .hero {
+    padding: 5.75rem 0 3.25rem;
+  }
+
+  .hero__heading {
+    font-size: clamp(2.05rem, 8vw, 2.9rem);
+  }
+
+  .hero__stat-pill--repos {
+    right: 0;
+    top: 0.25rem;
+  }
+
+  .hero__stat-pill--gists {
+    left: 0;
+    top: auto;
+    bottom: 0.75rem;
+  }
+
+  .section__title {
+    font-size: clamp(1.75rem, 6vw, 2.35rem);
+  }
+
+  .project,
+  .project--large {
+    padding: 1.35rem;
+    gap: 1.25rem;
+  }
+
+  .flap-board {
+    min-width: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .flap {
+    width: 28px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
+
+  .flap--sm {
+    width: 22px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+
+  .sync-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .archive-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .archive-header {
+    padding: 1.15rem 1.25rem;
+  }
+
+  #talk-search-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .archive-table th,
+  .archive-table td {
+    padding: 0.85rem 0.9rem;
+    font-size: 0.82rem;
+  }
+
+  .speaking-grid,
+  .community-grid,
+  .articles-grid,
+  .articles-full-grid,
+  .media-grid,
+  .gallery-grid,
+  .albums-grid,
+  .awards-grid,
+  .leadership-grid,
+  .panels-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .nav__logo-text {
+    font-size: 0.92rem;
+  }
+
+  .hero__actions,
+  .contact__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn,
+  .contact__actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .filter-bar {
+    gap: 0.4rem;
+  }
+
+  .filter-btn {
+    font-size: 0.78rem;
+    padding: 0.42rem 0.85rem;
+  }
+
+  .gallery-place-pill {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .speaking-grid,
+  .community-grid,
+  .articles-grid,
+  .articles-full-grid,
+  .media-grid,
+  .gallery-grid,
+  .albums-grid,
+  .awards-grid,
+  .leadership-grid,
+  .panels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-summary-quote {
+    padding: 1.15rem 1.25rem;
+  }
+
+  .lightbox-modal {
+    padding: 1rem;
+  }
+
+  .lightbox-close {
+    top: -36px;
+    right: 0;
+  }
 }
